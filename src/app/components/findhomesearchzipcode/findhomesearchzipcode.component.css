@@ -1,0 +1,165 @@
+.responsive-div {
+    background-color: #af1f24;
+
+    padding: 1.5rem;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    font-family: Helvetica;
+
+    display: flex;
+}
+
+.col1 {
+    width: 70%;
+}
+
+.col2 {
+    width: 140px;
+}
+
+.col3 {
+    width: 221px;
+
+    margin-left: 1.2cm;
+}
+
+.a {
+    margin-left: 1.5cm;
+}
+
+.field2 {
+    margin-left: 2cm;
+
+    width: 260px;
+}
+
+/* Decrease the margin between h2 and p */
+
+.a h2 {
+    margin-bottom: 0.5rem;
+
+    font-family: Helvetica;
+
+    /* Adjust as needed */
+}
+
+.b {
+    width: 80%;
+
+    text-align: justify;
+
+    color: rgb(64, 63, 63);
+
+    font-size: 14px;
+}
+
+.c {
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+.d {
+    width: 47%;
+
+    text-align: justify;
+
+    color: #6c6c6c;
+
+    font-size: 13px;
+
+    letter-spacing: 0cm;
+}
+
+.form-field {
+    margin-left: 1.5cm;
+}
+
+.underlined-text {
+    color: #af1f24;
+
+    text-decoration: underline;
+
+    text-underline-offset: 5px;
+
+    font-weight: 100px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+
+@media (max-width: 768px) {
+    .responsive-div {
+        font-size: 15px;
+
+        /* Adjust font size for smaller screens */
+    }
+
+    .a {
+        margin-left: 0;
+
+        /* Remove the left margin on smaller screens */
+    }
+
+    .a h2 {
+        margin-bottom: 0.25rem;
+
+        /* Adjust as needed for smaller screens */
+    }
+
+    .form-field {
+        margin-left: 0cm;
+    }
+
+    .field2 {
+        margin-left: 0;
+    }
+
+    .section2 {
+        margin-left: 0;
+    }
+}
+
+.section2 {
+    margin-left: 0.5cm;
+}
+
+/* .mat-form-field{
+  
+      width: 300px;
+  
+  } */
+
+/* Styles for the two-column layout */
+
+.two-column-layout {
+    display: flex;
+}
+
+.fieldwidth {
+    width: 260px;
+}
+
+/* Styles for column 1 (67% width) */
+
+.column-1 {
+    flex: 67%;
+
+    padding: 16px;
+}
+
+.column-2 {
+    flex: 33%;
+
+    padding: 16px;
+}
+
+/* .mat-checkbox{
+  
+      color: #6C6C6C;
+  
+  } */

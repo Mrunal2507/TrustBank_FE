@@ -1,0 +1,97 @@
+.quote{
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;  
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .quote {
+      margin-left: 2px;
+    }
+}
+
+.quote1{
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight:540;
+    line-height: 22px;  
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 350px;
+    width: 45%;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .quote1 {
+        margin-left: 160px;
+        width: 60%;
+    }
+}
+
+.grid-container{
+    display: flex;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .grid-container {
+        display:list-item;
+    }
+}
+
+.card{
+    margin-top: 70px;
+    margin-left: 92px;
+    border: 0px
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .card {
+        margin-left: 30%;
+    }
+}
+
+.card-img-top{
+    width: 300px;
+    height: 220px;
+    border-radius: 4px
+}
+
+.heading{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.card-text{
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    width: 330px;
+    margin-left: -0.8cm;
+} 
+
+.btn{
+    font-family: Helvetica;
+    width: 392px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 35%;
+    border-radius: 4px;
+    background: #AF1F24;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .btn {
+        margin-left: 24%;
+    }
+}

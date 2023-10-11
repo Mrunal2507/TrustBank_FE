@@ -1,0 +1,22 @@
+<div class="head1" style="padding-top: 2%">
+  <a (click)="setActiveLink1('personal loan')" [ngClass]="{
+        'nav-link1': true,
+        active: activeLink1 === 'personal loan'
+      }" class="link-format">Personal Loan</a>
+  <a (click)="setActiveLink1('investments')" [ngClass]="{
+        'nav-link1': true,
+        active: activeLink1 === 'investments'
+      }" class="link-format">Investments</a>
+  <a (click)="setActiveLink1('small business')" [ngClass]="{
+        'nav-link1': true,
+        active: activeLink1 === 'small business'
+      }" class="link-format">Small Business</a>
+  <a (click)="setActiveLink1('auto loans')" [ngClass]="{
+        'nav-link1': true,
+        active: activeLink1 === 'auto loans'
+      }" class="link-format">Auto Loans</a>
+  <a (click)="setActiveLink1('credit cards')" [ngClass]="{
+        'nav-link1': true,
+        active: activeLink1 === 'credit cards'
+      }" class="link-format">Credit Cards</a>
+</div>

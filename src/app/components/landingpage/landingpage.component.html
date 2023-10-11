@@ -1,0 +1,166 @@
+
+<app-header2></app-header2>
+<app-header3></app-header3>
+<table>
+  <tr>
+    <td>
+      <div
+        class="card mb-3"
+        style="max-width: 540px"
+        [ngClass]="{ box: activeTd === 0 }"
+        (click)="setActiveTd(0)"
+      >
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="assets/Images/home.png" class="card-img" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" routerLink="/home">Find a Home</h5>
+              <p class="card-text">
+                Start your journey towards homeownership now.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="margin-left: 2.1cm">
+        <div
+          class="card mb-3"
+          style="max-width: 540px"
+          [ngClass]="{ box: activeTd === 1 }"
+          (click)="setActiveTd(1)"
+        >
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="assets/Images/finance.png" class="card-img" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Refinance</h5>
+                <p class="card-text">
+                  Start your journey towards homeownership now.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div
+        class="card mb-3"
+        style="max-width: 540px; margin-top: -0.01cm"
+        [ngClass]="{ box: activeTd === 2 }"
+        (click)="setActiveTd(2)"
+      >
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="assets/Images/mortgage.png" class="card-img" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" routerLink="/mortgageloanapplication">Mortgage</h5>
+              <p class="card-text">Set your Home loan needs and Finances.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="margin-left: 2.1cm">
+        <div
+          class="card mb-3"
+          style="max-width: 540px; margin-top: -0.01cm"
+          [ngClass]="{ box: activeTd === 4 }"
+          (click)="setActiveTd(4)"
+        >
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="assets/Images/home.png" class="card-img" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Home Equity</h5>
+                <p class="card-text">
+                  Start your journey towards homeownership now.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div
+        class="card mb-3"
+        style="max-width: 540px; margin-top: -0.01cm"
+        [ngClass]="{ box: activeTd === 5 }"
+        (click)="setActiveTd(5)"
+      >
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="assets/Images/tool.png" class="card-img" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Access Calculator and tools</h5>
+              <p class="card-text">
+                Check current rates of your located homes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="margin-left: 2.1cm">
+        <div
+          class="card mb-3"
+          style="max-width: 540px; margin-top: -0.01cm"
+          [ngClass]="{ box: activeTd === 6 }"
+          (click)="setActiveTd(6)"
+        >
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="assets/Images/guide.png" class="card-img" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Home Buying guide</h5>
+                <p class="card-text">
+                  Start your journey towards homeownership now.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+<div style="position: relative">
+  <img src="assets/Images/background.png" class="banner" />
+  <button
+    class="btn btn-outline-primary"
+    style="
+      position: absolute;
+      top: 50%;
+      left: 78%;
+      color: #2a46d7;
+      width: 220px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: white;
+      border: 0px;
+    "
+  >
+    Get Prequalified
+  </button>
+</div>

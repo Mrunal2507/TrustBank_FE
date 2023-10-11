@@ -1,0 +1,47 @@
+.nav {
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background: #AF1F24;
+    }
+    
+    .bar{
+        width: 50%;
+    }
+
+#bar{
+    padding-top: 5px;
+}
+    /* --------------------------footer csss */
+    .center{
+        position: fixed;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+    
+    :host .mat-button-toggle-group{
+        border-radius: 20px !important;
+    }
+    
+    .mat-tab-group {
+        margin-bottom: 48px;
+        margin: auto;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    :host .mat-tab-group{
+        border-radius: 20px !important;
+    }
+    #cross{
+        padding-top: 10px;
+         
+    }
+    #pop{
+        padding-top: 3px;
+         
+    }

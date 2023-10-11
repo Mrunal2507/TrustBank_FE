@@ -1,0 +1,33 @@
+<table>
+    <tr>
+      <td style="background-color: grey" class="popup">
+        <img src="assets/Images/popup.png" />
+      </td>
+      <td>
+        <div (click)="closeH1()">
+          <img
+            src="assets/Images/close.png"
+            style="
+              height: 0.6cm;
+              margin-top: -1.7cm;
+              margin-left: 12.1cm;
+              cursor: pointer;
+            "
+          />
+        </div>
+        <div>
+          <p class="heading">Woohoo!</p>
+          <p class="subText">Discover amazing Properties near you!!</p>
+          <p class="abc">
+            Experience the thrill of discovering extraordinary properties right in
+            your vicinity! Our curated selection showcases stunning homes that are
+            sure to captivate your imagination. Are you ready to have a look?
+          </p>
+        </div>
+        <button class="btn" routerLink="/Findhomesearchzipcode" (click)="closeH1()">
+          View Properties
+        </button>
+      </td>
+    </tr>
+  </table>
+  

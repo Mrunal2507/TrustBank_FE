@@ -1,0 +1,46 @@
+.heading{
+    font-family: Helvetica;
+    font-weight: 750;
+    margin-left: 32%;
+    font-size: 48px;
+    /* margin-top: -1px; */
+}
+
+.btn{
+    font-family: Helvetica;
+    font-weight: 600;
+    width: 392px;
+    height: 40px;
+    margin-top: 35px;
+    border-radius: 4px;
+    background: #AF1F24;
+    margin-left: 12%;
+    color: white;
+}
+
+.abc{
+    font-family: Helvetica;
+    font-size: 13.4px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    width: 350px;
+    margin-left: 17.3%;
+    margin-top: 0.1cm;
+    color: #474747;
+    letter-spacing: 0.01cm;
+}
+
+img{
+    height: 358.6px;
+    margin-top: -0.03cm;
+    margin-left: -0.03cm;
+}
+
+.subText{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 18.3px;
+    margin-top: 40px;
+    margin-left: 18%;
+}

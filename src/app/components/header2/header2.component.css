@@ -1,0 +1,92 @@
+.logo{
+    width: 180px;
+    height: 48px;
+    margin-top: 7px;
+    margin-left: 24px;
+    margin-bottom: 7px;
+}
+
+.head{
+    background-color: #f4f2f2;
+}
+
+.num{ 
+    font-family: Helvetica;  
+    margin-left: 633px;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .num {
+      margin-left: 70px;
+    }
+}
+
+.mail{
+    font-family: Helvetica;
+    margin-left: 63px; 
+    cursor: pointer; 
+}
+
+.head1{
+    background: #AF1F24;
+    width: 100%;
+    height: 70px;
+}
+
+.nav-link1{
+    font-family: Helvetica;
+    font-size: 18px;
+    margin-left: 58px;
+    margin-top: 108px;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .nav-link1 {
+      margin-left: 7px;
+      margin-top: 7px;
+    }
+}
+
+.nav-link1.active {
+    color: white;
+    border-bottom: 3px solid white;
+    border-radius: 1px;
+    padding: 21px;
+    font-weight: bold;
+    margin-left: 48px;
+}
+
+.head2{
+    box-shadow: 0px 0px 10px rgba(158, 180, 206, 0.64);
+    height: 70px;
+}
+
+.nav-link2{
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #464646;
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+    .nav-link2 {
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+}
+
+.nav-link2.active {
+    font-weight: bold;
+    border-bottom: 3px solid #af1f24;
+    border-radius: 2px;
+    padding: 21px;
+    margin-left: 30px;
+}
+
+.link-format {
+    color: #fff;
+    text-decoration: none; 
+}

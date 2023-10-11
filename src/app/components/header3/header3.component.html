@@ -1,0 +1,36 @@
+<div style="padding-top: 2%" class="head2">
+    <a
+      (click)="setActiveLink('home')"
+      [ngClass]="{ 'nav-link2': true, active: activeLink === 'home' }"
+      style="text-decoration: none;"
+      >Home Solutions</a
+    >
+    <a
+      (click)="setActiveLink('checkingSavings')"
+      [ngClass]="{ 'nav-link2': true, active: activeLink === 'checkingSavings' }"
+      style="text-decoration: none;"
+      >Checking and Savings</a
+    >
+    <a
+      (click)="setActiveLink('educationLoans')"
+      [ngClass]="{ 'nav-link2': true, active: activeLink === 'educationLoans' }"
+      style="text-decoration: none;"
+      >Education Loans</a
+    >
+    <a
+      (click)="setActiveLink('medicalLoans')"
+      [ngClass]="{ 'nav-link2': true, active: activeLink === 'medicalLoans' }"
+      style="text-decoration: none;"
+      >Medical Loans</a
+    >
+    <a
+      (click)="setActiveLink('agriculturalLoans')"
+      [ngClass]="{
+        'nav-link2': true,
+        active: activeLink === 'agriculturalLoans'
+      }"
+      style="text-decoration: none;"
+      >Agricultural Loans</a
+    >
+  </div>
+

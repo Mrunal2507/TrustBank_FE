@@ -1,0 +1,78 @@
+<!-- map NavBar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #af1f24">
+  <a class="navbar-brand" href="#" style="color: white; margin-left: 20px">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" style="color: white; margin-left: 30px">Saved</a>
+      <a class="nav-item nav-link active" style="color: white; margin-left: 30px">Find Home</a>
+      <a class="nav-item nav-link active" style="color: white; margin-left: 30px">Near me</a>
+      <a class="nav-item nav-link active" style="color: white; margin-left: 30px" routerLink="/propertylist">View Properties</a>
+    </div>
+  </div>
+</nav>
+<br>
+<!-- search bar -->
+<div class="d-flex">
+  <div class="bar">
+    <div class="input-group rounded">
+      <input type="search" class="form-control rounded"
+        placeholder="Lincoln Park & Old Town, North Avenue, Street High, Chicago" aria-label="Search"
+        aria-describedby="search-addon" />
+      <mat-icon id="bar">search</mat-icon>
+      <span class="input-group-text border-0" id="search-addon">
+
+      </span>
+    </div>
+  </div>
+  <div class="bar">
+
+    <div class="d-inline-block">
+      <input type="search" class="form-control rounded" placeholder="Property Type" aria-label="Search"
+        aria-describedby="search-addon" />
+      <span class="input-group-text border-0" id="search-addon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+    <div class="d-inline-block">
+      <input type="search" class="form-control rounded" placeholder="Price" aria-label="Search"
+        aria-describedby="search-addon" />
+      <span class="input-group-text border-0" id="search-addon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+    <div class="d-inline-block">
+      <input type="search" class="form-control rounded" placeholder="Property Age" aria-label="Search"
+        aria-describedby="search-addon" />
+      <span class="input-group-text border-0" id="search-addon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+  </div>
+</div>
+<!-- Basic Map -->
+<div [hidden]="isShowDiv">
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ameCcQSFkzrZaCEayj85LHxwD3RGnnI&ehbc=2E312F&noprof=1"
+    width="100%" height="580"></iframe>
+</div>
+<!-- Color map -->
+<div [hidden]="!isShowDiv">
+  <iframe src="https://www.google.com/maps/d/embed?mid=1AtlD05cTm97N_auGLk-t8n9fInBKUvs&ehbc=2E312F&noprof=1"
+    width="100%" height="730"></iframe>
+</div>
+<!-- Footer -->
+<div class="center">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle id="pop" value="bold" (click)=toggleDisplayDiv()><b>Population</b></mat-button-toggle>
+    <mat-button-toggle id="pop" value="bold"><b>Crime Rate</b></mat-button-toggle>
+    <mat-button-toggle id="pop" value="bold"><b>Schools</b></mat-button-toggle>
+    <mat-button-toggle id="pop" value="bold"><b>Hospitals</b></mat-button-toggle>
+    <mat-button-toggle id="cross" value="bold"><a routerLink="/map"><mat-icon aria-hidden="false"
+          aria-label="Example home icon" fontIcon="clear" style="color: black;"></mat-icon>
+      </a></mat-button-toggle>
+  </mat-button-toggle-group>
+</div>

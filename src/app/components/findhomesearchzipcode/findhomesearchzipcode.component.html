@@ -1,0 +1,261 @@
+<app-header4></app-header4>
+<div class="two-column-layout" style="font-family: Arial, Helvetica, sans-serif">
+    <div class="column column-1">
+      <div class="a">
+        <h2 style="font-size: 32px">One step closer!</h2>
+  
+        <p style="font-weight: bold; font-size: 16px">
+          we would like to get some information from you
+        </p>
+  
+        <div class="b">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          sollicitudin libero a elit pulvinar, vitae tristique enim pharetra.
+          Nullam fringilla, nunc vel pellentesque fermentum, ipsum neque finibus
+          quam, nec tristique eros turpis nec metus.
+        </div>
+      </div>
+  
+      <pre></pre>
+  
+      <form>
+        <div class="form-field">
+          <div class="c">Personal Details</div>
+  
+          <pre></pre>
+  
+          <mat-form-field appearance="outline" class="fieldwidth">
+            <mat-label>First Name</mat-label>
+  
+            <input matInput type="text" placeholder="First Name" [formControl]="firstName" />
+  
+            <mat-error *ngIf="
+                  firstName.hasError('required') &&
+                  (firstName.touched || firstName.dirty)
+                ">
+              Please Enter a value.
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="field2" style="width: 260px">
+            <mat-label>Last Name</mat-label>
+  
+            <input matInput type="text" placeholder="Last Name" [formControl]="lastName" required />
+  
+            <mat-error *ngIf="
+                  lastName.hasError('required') &&
+                  (lastName.touched || lastName.dirty)
+                ">
+              Please Enter a value.
+            </mat-error>
+          </mat-form-field>
+        </div>
+  
+        <br />
+  
+        <div class="form-field">
+          <div class="c">Contact Information</div>
+  
+          <pre></pre>
+  
+          <div class="d">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sollicitudin libero a elit pulvinar.
+          </div>
+  
+          <pre></pre>
+  
+          <mat-form-field appearance="outline" class="fieldwidth">
+            <mat-label>Email Id</mat-label>
+  
+            <input matInput placeholder="abc@gmail.com" [formControl]="email" required />
+  
+            <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="field2">
+            <mat-label>Phone</mat-label>
+  
+            <input matInput pplaceholder="XX-XXX-XXX-XX" [formControl]="phoneNo" required maxlength="10" />
+  
+            <mat-error *ngIf="
+                  phoneNo.hasError('required') && (phoneNo.touched || phoneNo.dirty)
+                ">
+              Please Enter a value.
+            </mat-error>
+  
+            <mat-error *ngIf="phoneNo.hasError('pattern')">Please enter a valid phone number.</mat-error>
+          </mat-form-field>
+  
+          <div class="c">Family Details</div>
+  
+          <pre></pre>
+  
+          <div class="d">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sollicitudin libero a elit pulvinar.
+          </div>
+  
+          <pre></pre>
+  
+          <div class="c">How Many people are going to live in the house</div>
+  
+          <pre></pre>
+  
+          <mat-form-field appearance="outline" class="fieldwidth">
+            <input matInput type="number" placeholder="+2" required />
+          </mat-form-field>
+  
+          <div class="c">Do you have children</div>
+  
+          <pre></pre>
+  
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+  
+            <mat-radio-button>No</mat-radio-button>
+          </mat-radio-group>
+  
+          <pre></pre>
+  
+          <div class="c">Are you looking for luxury apartment</div>
+  
+          <pre></pre>
+  
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+  
+            <mat-radio-button>No</mat-radio-button>
+          </mat-radio-group>
+  
+          <pre></pre>
+  
+          <div class="c">Employement Details</div>
+  
+          <pre></pre>
+  
+          <div class="d">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sollicitudin libero a elit pulvinar.
+          </div>
+  
+          <pre></pre>
+  
+          <mat-form-field appearance="outline" class="fieldwidth">
+            <mat-label>Source of Income</mat-label>
+  
+            <mat-select>
+              <!-- <mat-option value="option">Option</mat-option> -->
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="field2">
+            <mat-label>Total Monthly Income</mat-label>
+  
+            <input matInput type="number" class="example-right-align" placeholder="0" />
+  
+            <span matTextPrefix>$&nbsp;</span>
+          </mat-form-field>
+  
+          <br />
+  
+          <mat-form-field appearance="outline" class="fieldwidth">
+            <mat-label>Total Monthly Liability</mat-label>
+  
+            <input matInput type="text" placeholder="XX-XXX-XXX-XX" required />
+          </mat-form-field>
+  
+          <div class="c">Address</div>
+  
+          <pre></pre>
+  
+          <div class="d">
+            Please enter zip code of a property location you are looking for.
+          </div>
+  
+          <pre></pre>
+  
+          <mat-form-field appearance="outline" class="fieldwidth">
+            <input matInput type="text" placeholder="60613" required /> </mat-form-field><br />
+  
+          <mat-checkbox>I agree that All the above information is correct</mat-checkbox>
+  
+          <pre></pre>
+  
+          <div>
+            <button style="width: 210px; background-color: #af1f24; border-radius: 10px" mat-raised-button color="warn"  routerLink="/findhome-map">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+    <!--Section 2-->
+  
+    <div class="column column-2" style="font-family: Arial, Helvetica, sans-serif">
+      <h3 style="margin-left: 2cm">Login</h3>
+  
+      <form>
+        <div class="form-field">
+          <div class="section2">
+            <mat-form-field appearance="outline" style="width: 240px">
+              <mat-label>User ID</mat-label>
+  
+              <input matInput type="text" placeholder="User Id" required />
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline" style="width: 240px">
+              <mat-label>Password</mat-label>
+  
+              <input matInput type="text" placeholder="Password" required />
+            </mat-form-field>
+  
+            <div style="color: rgb(69, 70, 71); margin-left: -0.25cm">
+              <mat-checkbox>Receive Updates</mat-checkbox>
+            </div>
+  
+            <pre></pre>
+  
+            <div>
+              <button style="
+                    width: 230px;
+                    border: 2px solid #af1f24;
+                    color: #af1f24;
+                    border-radius: 10px;
+                  " mat-stroked-button color="warn"
+                 >
+                Submit
+            </button>
+            </div>
+  
+            <br />
+          </div>
+  
+          <img src="/assets/Images/property.png" width="270px" />
+  
+          <pre></pre>
+  
+          <div class="c">
+            Proceed to Mortgage Loan
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="underlined-text" routerLink="/mortgageloanapplication">
+              Apply</span>
+          </div>
+  
+          <pre></pre>
+  
+          <div style="
+                color: rgb(145, 146, 147);
+                text-align: justify;
+                font-size: 14px;
+                width: 85%;
+              ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc an
+            sollicitudin libero a elit pulvinar, vitae tristique enim pharetra.
+            Nullam fringilla, nunc vel pellentesque fermentum, ipsum neque finibus
+            quam, nec tristique eros turpis nec metus.
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
