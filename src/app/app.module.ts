@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
@@ -11,7 +10,7 @@ import { FindahomeComponent } from './components/findahome/findahome.component';
 import { LoancalculatorComponent } from './components/loancalculator/loancalculator.component';
 import { FindhomesearchzipcodeComponent } from './components/findhomesearchzipcode/findhomesearchzipcode.component';
 import { PropertylistComponent } from './components/propertylist/propertylist.component';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -26,9 +25,13 @@ import { Header2Component } from './components/header2/header2.component';
 import { Header3Component } from './components/header3/header3.component';
 import { Header4Component } from './components/header4/header4.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
-
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { FormsModule} from '@angular/forms';
+import { PropertyService } from './Service/property.service';
+import { MortgageloanapplicationService } from './Service/mortgageloanapplication.service';
+// import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -60,9 +63,18 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatFormFieldModule,
     MatButtonToggleModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule,
+    FormsModule,
+    MatSnackBarModule
+    // ToastrModule.forRoot({
+    //   timeOut: 3000, 
+    //   positionClass: 'toast-top-right',
+    //   preventDuplicates: true, 
+    // })
   ],
-  providers: [],
+  providers: [PropertyService,
+    MortgageloanapplicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

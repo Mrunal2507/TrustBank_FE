@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./landingpage.component.css']
 })
 export class LandingpageComponent {
-  activeTd: number = 0; 
 
-  setActiveTd(tdIndex: number) {
-    this.activeTd = tdIndex;
-  }
 }

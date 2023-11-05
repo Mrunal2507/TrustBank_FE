@@ -14,7 +14,7 @@
     }
 }
 
-.card.box{
+.card:hover{
     width: 480px;
     height: 123px;
     margin-top: 30px;

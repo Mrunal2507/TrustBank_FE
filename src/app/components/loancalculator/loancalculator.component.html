@@ -1,110 +1,207 @@
 <app-header4></app-header4>
-<div class="flexbox">
-
-    <div class="first-item">
-        <div style="width: 25vw">
-            <div class="row" style="width: 60vw">
-                <h2>How much I can Afford?</h2>
-                <p>This is a simulator to get the approximate value for Loan estimates</p>
-            </div>
-            <div>
-                <p>You can take loan upto*</p>
-                <h1><b>$345899</b></h1>
-            </div>
-            <div>
-                <form style="padding: 0px 0px 15px 10px; width: 40vw;">
-                    <div class="form-field" id="inputfield" style="width: 40vw;">
-                        <mat-form-field id="inputfield" appearance="outline">
-                            <mat-label>Home Price</mat-label>
-                            <input matInput type="text" placeholder="Home Price" formControlName="firstname"
-                                required="*" />
-                        </mat-form-field>
-                    </div>
-                    <br />
-                    <div class="form-field" id="inputfield" style="width: 40vw">
-                        <mat-form-field id="inputfield" appearance="outline">
-                            <mat-label>Down Payment</mat-label>
-                            <input matInput type="text" placeholder="Down Payment" formControlName="firstname"
-                                required="*" />
-                        </mat-form-field>
-                    </div>
-                    <br />
-                    <div class="form-field" id="inputfield" style="width: 40vw">
-                        <mat-form-field id="inputfield" appearance="outline">
-                            <mat-label>Down Payment percent</mat-label>
-                            <input matInput type="text" placeholder="Down Payment percent" formControlName="firstname"
-                                required="*" />
-                        </mat-form-field>
-                    </div>
-                    <br />
-                    <div class="form-field" id="inputfield" style="width: 40vw">
-                        <mat-form-field id="inputfield" appearance="outline">
-                            <mat-label>Zip Code</mat-label>
-                            <input matInput type="text" placeholder="Zip Code" formControlName="firstname"
-                                required="*" />
-                        </mat-form-field>
-                    </div>
-                    <br />
-                    <div class="example-button-row" id="schedule-btn" style="width: 35vw">
-                        <button mat-raised-button id="schedule-btn" style="background-color: #af1f24; color: white"
-                            type="submit">
-                            Calculate
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+<div class="row" style="margin: 0px 30px 0px 30px">
+  <div class="col-9">
+    <div>
+      <pre></pre>
+      <pre></pre>
+      <h2>How much I can Afford?</h2>
+      <p>This is a simulator to get the approximate value for Loan estimates</p>
+      <p style="width: 68%">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc an
+        sollicitudin libero a elit pulvinar, vitae tristique enim pharetra.
+        Nullam fringilla, nunc vel pellentesque fermentum, ipsum neque finibus
+        quam, nec tristique eros turpis nec metus.
+      </p>
     </div>
-    <div class="second-item">
+    <div>
+      <pre></pre>
+      <pre></pre>
+      <p>You can take loan upto*</p>
+      <h1><strong>$345899</strong></h1>
+    </div>
+    <pre></pre>
+    <pre></pre>
+    <div class="row">
+      <div class="col-4">
+        <form
+          style="padding: 0px 0px 5px 5px; width: 40vw"
+          [formGroup]="homeloanForm"
+          (ngSubmit)="onSubmit(homeloanForm)"
+        >
+          <div class="form-field" id="inputfield" style="width: 40vw">
+            <mat-form-field
+              id="inputfield"
+              appearance="outline"
+              style="width: 6cm"
+            >
+              <mat-label>Home Price</mat-label>
+              <input
+                matInput
+                type="text"
+                placeholder="Home Price"
+                formControlName="homePrice"
+                required="*"
+              />
+            </mat-form-field>
+          </div>
+          <br />
+          <div class="form-field" id="inputfield" style="width: 40vw">
+            <mat-form-field
+              id="inputfield"
+              appearance="outline"
+              style="width: 6cm"
+            >
+              <mat-label>Down Payment</mat-label>
+              <input
+                matInput
+                type="text"
+                placeholder="Down Payment"
+                formControlName="downPayment"
+                required="*"
+              />
+            </mat-form-field>
+          </div>
+          <br />
+          <div class="form-field" id="inputfield" style="width: 40vw">
+            <mat-form-field
+              id="inputfield"
+              appearance="outline"
+              style="width: 6cm"
+            >
+              <mat-label>Down Payment percent</mat-label>
+              <input
+                matInput
+                type="text"
+                placeholder="Down Payment percent"
+                formControlName="downPaymentPercent"
+                required="*"
+              />
+            </mat-form-field>
+          </div>
+          <br />
+          <div class="form-field" id="inputfield">
+            <mat-form-field
+              id="inputfield"
+              appearance="outline"
+              style="width: 6cm"
+            >
+              <mat-label>Zip Code</mat-label>
+              <input
+                matInput
+                type="text"
+                placeholder="Zip Code"
+                formControlName="zipCode"
+                required="*"
+              />
+            </mat-form-field>
+          </div>
+          <br />
+          <div class="example-button-row" id="schedule-btn" style="width: 35vw">
+            <button
+              mat-raised-button
+              id="schedule-btn"
+              style="background-color: #af1f24; color: white; width: 6cm"
+              type="submit"
+            >
+              Calculate
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-8">
         <div>
-            <canvas id="myChart" style="width: 900px; max-width: 100vw; max-height: 50vh;">{{ chart }}</canvas>
+          <canvas
+            id="myChart"
+            style="width: 60%; max-width: 15cm; max-height: 8cm"
+            >{{ chart }}</canvas
+          >
         </div>
+      </div>
     </div>
-    <div class="third-item">
-        <div class="third-column" style="width: 30vw">
-            <h2>Login</h2>
-            <form style="padding: 0px 0px 15px 10px">
-                <div class="form-field" id="inputfield" style="width: 40vw">
-                    <mat-form-field id="inputfield" appearance="outline">
-                        <mat-label>User Id</mat-label>
-                        <input matInput type="text" placeholder="User Id" formControlName="firstname" required="*" />
-                    </mat-form-field>
-                </div>
-                <br />
-                <div class="form-field" id="inputfield" style="width: 40vw">
-                    <mat-form-field id="inputfield" appearance="outline">
-                        <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Password" formControlName="firstname"
-                            required="*" />
-                    </mat-form-field>
-                </div>
-                <section class="example-section">
-                    <mat-checkbox class="example-margin">Receive Updates</mat-checkbox>
-                </section>
-                <div class="example-button-row" id="schedule-btn" style="width: 40vw">
-                    <button mat-raised-button id="schedule-btn" style="background-color: white; color: #af1f24"
-                        type="submit">
-                        Submit
-                    </button>
-                </div>
-            </form>
-            <div class="img-house">
-                <img src="https://th.bing.com/th/id/OIP.sRUYzP1ilfCfg7fUuux8_QHaEK?pid=ImgDet&rs=1" />
+  </div>
+  <div class="col-3">
+    <pre></pre>
+    <pre></pre>
+    <h2>Login</h2>
+    <form>
+      <div class="form-field" id="inputfield">
+        <mat-form-field id="inputfield" appearance="outline" style="width: 6cm">
+          <mat-label>User Id</mat-label>
+          <input
+            matInput
+            type="text"
+            id="id"
+            aria-label="id"
+            placeholder="User Id"
+            formControlName="firstname"
+            required="*"
+          />
+        </mat-form-field>
+      </div>
+      <br />
+      <div class="form-field" id="inputfield">
+        <mat-form-field id="inputfield" appearance="outline" style="width: 6cm">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            id="pwd"
+            aria-label="password"
+            type="password"
+            placeholder="Password"
+            formControlName="firstname"
+            required="*"
+          />
+        </mat-form-field>
+      </div>
+      <section class="example-section">
+        <mat-checkbox class="example-margin" style="margin-left: -0.25cm"
+          >Receive Updates</mat-checkbox
+        >
+      </section>
+      <pre></pre>
+      <div class="example-button-row" id="schedule-btn">
+        <button
+          mat-raised-button
+          id="schedule-btn"
+          style="background-color: white; color: #af1f24; width: 83%"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <div class="img-house">
+      <img
+        src="https://th.bing.com/th/id/OIP.sRUYzP1ilfCfg7fUuux8_QHaEK?pid=ImgDet&rs=1"
+        height="150"
+        alt="img"
+      />
 
-                <br /><br />
-                <div class="option">
-                    <h5>Proceed to Mortgage Loan</h5>
+      <br /><br />
+      <div class="option">
+        <div style="display: flex">
+          <h5 style="font-weight: bold">Proceed to Mortgage Loan</h5>
 
-                    <a href="Apply" routerLink="/mortgage-loan">Apply</a>
-                </div>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc an
-                    sollicitudin libero a elit pulvinar, vitae tristique enim pharetra.
-                    Nullam fringilla, nunc vel pellentesque fermentum, ipsum neque finibus
-                    quam, nec tristique eros turpis nec metus.
-                </p>
-            </div>
+          <a
+            href="Apply"
+            routerLink="/mortgageloanapplication"
+            style="margin-left: 2.2cm; color: #af1f24"
+            >Apply</a
+          >
         </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc an
+          sollicitudin libero a elit pulvinar, vitae tristique enim pharetra.
+          Nullam fringilla, nunc vel pellentesque fermentum, ipsum neque finibus
+          quam, nec tristique eros turpis nec metus.
+        </p>
+      </div>
     </div>
+  </div>
 </div>
+<pre></pre>
+<pre></pre>

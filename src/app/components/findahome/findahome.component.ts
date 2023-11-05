@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./findahome.component.css']
 })
 export class FindahomeComponent {
+
   isShowDiv = false;  
-     
+   
   toggleDisplayDiv() {  
     this.isShowDiv = !this.isShowDiv;  
-  }  
+  }
+  toggleDontDisplayDiv() {  
+    this.isShowDiv = false;
+  }
+  
 }
